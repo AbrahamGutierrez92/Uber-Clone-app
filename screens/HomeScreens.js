@@ -3,6 +3,7 @@ import { StyleSheet, Text,TextInput, View, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import tw from "tailwind-react-native-classnames";
 import NavOptions from "./components/NavOptions";
+import NavFavourites from "./components/NavFavourites.js";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 
 const HomeScreens = () => {
@@ -28,6 +29,7 @@ const HomeScreens = () => {
           placeholder="Where from ?" 
         />
         <NavOptions />
+        <NavFavourites style={tw``}/>
       </View>
     </SafeAreaView>
   );
