@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import tw from "tailwind-react-native-classnames";
+import NavFavourites from "./NavFavourites";
 
 const NavigateCard = () => {
   return (
@@ -14,6 +15,7 @@ const NavigateCard = () => {
         <View style={tw`mt-2`}>
           <TextInput style={tw` text-sm p-3 bg-gray-200`} placeholder="Where from ?" />
         </View>
+        <NavFavourites/>
       </View>
     </SafeAreaView>
   );
